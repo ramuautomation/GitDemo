@@ -33,7 +33,7 @@ public class stepDefination extends Utils {
 		
         		 res=given().spec(requestSpecification())
         		.body(data.addPlacePayload(name,language,address));
-     
+        		 System.out.println("given keyword is updated");
         		
 	}
 
@@ -48,7 +48,7 @@ public class stepDefination extends Utils {
 		response =res.when().post(resourceAPI.getResource());
 		else if(method.equalsIgnoreCase("GET"))
 			response =res.when().post(resourceAPI.getResource());	
-        		
+        		System.out.println("when keyword is updated");
 		
 	}
 
