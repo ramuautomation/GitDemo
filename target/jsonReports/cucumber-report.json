@@ -1,0 +1,168 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Verify if place is being successfully using addPlace API",
+        "description": "",
+        "id": "validating-place-api\u0027s;verify-if-place-is-being-successfully-using-addplace-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1946790100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add place payload with \"ramu\" \"telugu\" \"IBM street center\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ramu",
+                  "offset": 24
+                },
+                {
+                  "val": "telugu",
+                  "offset": 31
+                },
+                {
+                  "val": "IBM street center",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefination.add_place_payload_with(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3593100600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User calls \"AddplaceAPI\" with https request method \"POST\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AddplaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "POST",
+                  "offset": 52
+                }
+              ],
+              "location": "stepDefination.user_calls_with_https_request_method(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1885700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefination.api_call_is_success_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 943137300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21866900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 1
+                },
+                {
+                  "val": "APP",
+                  "offset": 29
+                }
+              ],
+              "location": "stepDefination.in_response_body_is(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1516295600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify place_id created maps to \"ramu\" using \"GetplaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ramu",
+                  "offset": 33
+                },
+                {
+                  "val": "GetplaceAPI",
+                  "offset": 46
+                }
+              ],
+              "location": "stepDefination.verify_place_id_created_maps_to_using(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@AddPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Place API\u0027s",
+    "description": "",
+    "id": "validating-place-api\u0027s",
+    "keyword": "Feature",
+    "uri": "placeValidations.feature"
+  }
+]
